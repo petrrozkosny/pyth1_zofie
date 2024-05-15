@@ -1,0 +1,137 @@
+eu_countries = {
+    "Austria": {
+        "capital": "Vienna",
+        "currency": "Euro",
+        "eu_membership_year": 1995
+    },
+    "Belgium": {
+        "capital": "Brussels",
+        "currency": "Euro",
+        "eu_membership_year": 1958
+    },
+    "Bulgaria": {
+        "capital": "Sofia",
+        "currency": "Bulgarian lev",
+        "eu_membership_year": 2007
+    },
+    "Croatia": {
+        "capital": "Zagreb",
+        "currency": "Euro",
+        "eu_membership_year": 2013
+    },
+    "Cyprus": {
+        "capital": "Nicosia",
+        "currency": "Euro",
+        "eu_membership_year": 2004
+    },
+    "Czech Republic": {
+        "capital": "Prague",
+        "currency": "Czech koruna",
+        "eu_membership_year": 2004
+    },
+    "Denmark": {
+        "capital": "Copenhagen",
+        "currency": "Danish krone",
+        "eu_membership_year": 1973
+    },
+    "Estonia": {
+        "capital": "Tallinn",
+        "currency": "Euro",
+        "eu_membership_year": 2004
+    },
+    "Finland": {
+        "capital": "Helsinki",
+        "currency": "Euro",
+        "eu_membership_year": 1995
+    },
+    "France": {
+        "capital": "Paris",
+        "currency": "Euro",
+        "eu_membership_year": 1958
+    },
+    "Germany": {
+        "capital": "Berlin",
+        "currency": "Euro",
+        "eu_membership_year": 1958
+    },
+    "Greece": {
+        "capital": "Athens",
+        "currency": "Euro",
+        "eu_membership_year": 1981
+    },
+    "Hungary": {
+        "capital": "Budapest",
+        "currency": "Hungarian forint",
+        "eu_membership_year": 2004
+    },
+    "Ireland": {
+        "capital": "Dublin",
+        "currency": "Euro",
+        "eu_membership_year": 1973
+    },
+    "Italy": {
+        "capital": "Rome",
+        "currency": "Euro",
+        "eu_membership_year": 1958
+    },
+    "Latvia": {
+        "capital": "Riga",
+        "currency": "Euro",
+        "eu_membership_year": 2004
+    },
+    "Lithuania": {
+        "capital": "Vilnius",
+        "currency": "Euro",
+        "eu_membership_year": 2004
+    },
+    "Luxembourg": {
+        "capital": "Luxembourg",
+        "currency": "Euro",
+        "eu_membership_year": 1958
+    },
+    "Malta": {
+        "capital": "Valletta",
+        "currency": "Euro",
+        "eu_membership_year": 2004
+    },
+    "Netherlands": {
+        "capital": "Amsterdam",
+        "currency": "Euro",
+        "eu_membership_year": 1958
+    },
+    "Poland": {
+        "capital": "Warsaw",
+        "currency": "Polish złoty",
+        "eu_membership_year": 2004
+    },
+    "Portugal": {
+        "capital": "Lisbon",
+        "currency": "Euro",
+        "eu_membership_year": 1986
+    },
+    "Romania": {
+        "capital": "Bucharest",
+        "currency": "Romanian leu",
+        "eu_membership_year": 2007
+    },
+    "Slovakia": {
+        "capital": "Bratislava",
+        "currency": "Euro",
+        "eu_membership_year": 2004
+    },
+    "Slovenia": {
+        "capital": "Ljubljana",
+        "currency": "Euro",
+        "eu_membership_year": 2004
+    },
+    "Spain": {
+        "capital": "Madrid",
+        "currency": "Euro",
+        "eu_membership_year": 1986
+    },
+    "Sweden": {
+        "capital": "Stockholm",
+        "currency": "Swedish krona",
+        "eu_membership_year": 1995
+    }
+}

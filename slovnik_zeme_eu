@@ -1,3 +1,19 @@
+'''
+Vytvořte proměnné typu list:
+- eurozona
+- novy_clen_eurozona
+- hlavni_mesta_eurozona
+
+Procházejte slovníkem eu_countries
+
+- do listu eurozona přidejte názvy zemí (klíče slovníku), ve kterých currency = "Euro"
+- do listu novy_clen_eurozona přidejte názvy zemí (klíče slovníku), ve kterých currency = "Euro" a zároveň eu_membership_year > 2000
+- do listu hlavni_mesta_eurozona přidejte hodnoty capital zemí, kde currency = "Euro" (např. Vienna, Brussels apod.)
+
+
+Do proměnné pocet_clenu_eurozona spočítejte, v kolika zemích currency = "Euro"
+'''
+
 eu_countries = {
     "Austria": {
         "capital": "Vienna",

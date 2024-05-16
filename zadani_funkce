@@ -1,0 +1,6 @@
+'''
+Vytvořte funkci zpracuj_list, ktera ma jeden pozicni argument hodnoty (očekáváme, že uživatel vloží list)
+prochazejte parametr hodnoty  a vypiste jednotlivé položky jednu po druhé  do konzole
+pokud je hodnota listu "Ostrava", iteraci zastavte
+Pokud se listem nepodari iterovat, vratte uzivateli hodnotu "Chyba při iteraci"
+'''

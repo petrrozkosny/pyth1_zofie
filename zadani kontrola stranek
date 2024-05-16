@@ -1,0 +1,22 @@
+# Imprortujte knihovnu requests
+
+
+# Vytvorte list nefunkcni_stranky
+
+
+# vytvorte funkci zkontroluj_url s pozicnim argumentem url
+# 1. Vytvorte promennou r a priradte ji hodnotu requests.get(url)
+# 2. Vytvorte podminku, ktera zkontroluje, zda je atribut status_code proměnné r roven 200,
+#    pokud ano, vypiste 'Stranka je dostupna'
+#    pokud ne, vypiste 'Stranka neni dostupna'
+# Pokud stranka nefunguje, pridejte ji do listu nefunkcni_stranky
+
+# Prochazejte list stranky a kazdou jednu polozku dosazujte jako argument funkce zkontroluj_url
+# Po dokonceni iterace vypiste do konzole pres print pocet nefunkcnich stranek, tj. pocet hodnot v listu nefunkcni_stranky
+
+
+stranky = [
+'https://www.prg.aero/prehled-letu#/prilety',
+'https://www.prg.aero/prakticke-ynformace',
+'https://www.prg.aero/kontakty'
+]

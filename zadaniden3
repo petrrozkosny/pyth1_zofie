@@ -19,7 +19,7 @@ _________________________________________________________
 # do promenne vstup ulozte input uzivatele
 
 # vytvorte funkci uhadni_cislo s povinnym parametrem cislo
-# do promenne cislo ulozte nahodne cislo v rozmezi 1-10, viz https://www.w3schools.com/python/ref_random_randint.asp
+# do promenne nahodnecislo ulozte nahodne cislo v rozmezi 1-10, viz https://www.w3schools.com/python/ref_random_randint.asp
 # pokud uzivatel zadal stejne cislo jako nahodne cislo, vypiste uzivateli: 'Shoda' jinak 'Zkus to znovu'
 # pokud uzivatel nezadal cislo, vypiste uzivateli: 'Nelze porovnat'
 # pokud uzivatel zadal cislo mimo rozsah 1-10, vypiste uzivateli: 'Cislo mimo rozsah'

@@ -1,0 +1,20 @@
+import re
+import requests
+from bs4 import BeautifulSoup as bs
+
+
+url  = 'https://www.kurzy.cz/kurzy-men/'
+
+r = requests.get(url)
+soup = bs(r.text, 'html.parser')
+
+def zjisti_kurz(soup):
+    vyraz = re.compile(r'([\w]{3})<.a><.td>\s*.*?right.*?right..([\d\.]{2,20})')
+    # najdi regularni vyraz v soup
+    kurzy = vyraz.findall(str(soup))
+
+    return kurzy
+
+
+kurz = zjisti_kurz(soup)
+kurz

@@ -1,0 +1,7 @@
+from fuzzywuzzy import fuzz
+
+mesto  = 'Praha Ruzine'
+mesto2 = 'Letiste Mnichov'
+
+shoda = fuzz.token_sort_ratio(mesto,mesto2)
+shoda

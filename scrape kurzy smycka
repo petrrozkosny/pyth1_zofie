@@ -1,0 +1,34 @@
+import re
+import requests
+from bs4 import BeautifulSoup as bs
+
+
+url  = 'https://www.kurzy.cz/kurzy-men/'
+
+r = requests.get(url)
+soup = bs(r.text, 'html.parser')
+
+def zjisti_kurz(soup):
+    vyraz = re.compile(r'([\w]{3})<.a><.td>\s*.*?right.*?right..([\d\.]{2,20})')
+    # najdi regularni vyraz v soup
+    kurzy = vyraz.findall(str(soup))
+
+    return kurzy
+
+kurz = zjisti_kurz(soup)
+
+
+
+
+vstup = None
+
+
+while vstup != 'N':
+    vstup  = input('Zadej měnu, pro konec zadej N: ')
+    kurzy = zjisti_kurz(soup)
+    for k in kurz:
+        if vstup == k[0]:
+            print(f'Kurz měny {k[0]} je {k[1]}')
+            break
+   
+

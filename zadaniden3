@@ -27,7 +27,7 @@ _________________________________________________________
 _________________________________________________________
 
 # Importujte modul datetime
-# do promenne ted ulozte hodnotu datetime.now()
+# do promenne ted ulozte hodnotu datetime.datetime.now()
 # vypiste uzivateli pres print hodnotu promenne ted
 
 # do promenne hodina ulozte hodnotu atributu hour promenne ted

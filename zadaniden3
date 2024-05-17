@@ -114,6 +114,12 @@ def zjisti_pocasi(soup):
 
 
 
+__________________________________________________
+
+
+lokalita = 'ruzyne'
+hodnoty = ['ruzyne','rusyne','ruzine','rusine','kbely','letnany']
+
 
 
 

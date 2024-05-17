@@ -1,0 +1,122 @@
+mesta = ['Praha','Brno','Ostrava','Plzeň','Liberec','Olomouc','Ústí nad Labem','Hradec Králové','České Budějovice','Pardubice']
+
+# do promenne vstup nacteme vstup od uzivatele, kdy uzivatel zada index polozky v listu mesta
+# uzivatelem zadanou hodnotu zkuste prevest na cislo, pokud se to nepodari, vypiste uzivateli: 'Hodnota musi byt cislo'
+# zkuste zi seznamu mesta ziskat polozku na indexu ziskanem od uzivatele, pokud je index mimo rozsah (IndexError), vypiste uzivateli: 'Index mimo rozsah'
+
+
+_________________________________________________________
+
+# Vytvorte funkci vynasob_dvema, ktera bude mit jeden parametr cislo
+# Vynasobte hodnotu parametru cislo a vypiste uzivateli pres print vysledek
+# Pokud nasobeni selze z duvodu neplatneho datoveho typu, vypiste uzivateli pres print: 'Nelze vynasobit'
+# Do promenne vstup ulozte input uzivatele, tuto promennou pouzijte jako parametr funkce vynasob_dvema
+
+_________________________________________________________
+
+# importujte modul random
+
+# do promenne vstup ulozte input uzivatele
+
+# vytvorte funkci uhadni_cislo s povinnym parametrem cislo
+# do promenne cislo ulozte nahodne cislo v rozmezi 1-10, viz https://www.w3schools.com/python/ref_random_randint.asp
+# pokud uzivatel zadal stejne cislo jako nahodne cislo, vypiste uzivateli: 'Shoda' jinak 'Zkus to znovu'
+# pokud uzivatel nezadal cislo, vypiste uzivateli: 'Nelze porovnat'
+# pokud uzivatel zadal cislo mimo rozsah 1-10, vypiste uzivateli: 'Cislo mimo rozsah'
+
+_________________________________________________________
+
+# Importujte modul datetime
+# do promenne ted ulozte hodnotu datetime.now()
+# vypiste uzivateli pres print hodnotu promenne ted
+
+# do promenne hodina ulozte hodnotu atributu hour promenne ted
+# pokud hodina je mensi nez 10, vypiste uzivateli: 'Dobré ráno'
+# pokud hodina je mensi nez 12, vypiste uzivateli: 'Dobré dopoledne'
+# pokud hodina je mensi nez 18, vypiste uzivateli: 'Dobré odpoledne'
+# pokud hodina je mensi nez 22, vypiste uzivateli: 'Dobrý večer'
+# jinak vypiste uzivateli: 'Dobrou noc'
+
+_________________________________________________________
+
+# importujte from pathlib import Path
+
+# do promenne slozka ulozte cestu k adresari pro stazene soubory
+
+# do promenne soubory ulozte vysledek metody iterdir() nad promennou slozka, ziskate tak list souboru v adresari
+
+# vytvorte cyklus pres promennou soubor v promenne soubory
+# vypiste uzivateli pres print nazev souboru, ten ziskate pomoci metody name
+# pokud je koncovka souboru 'csv', vypiste uzivateli: 'Soubor je csv'. Koncovku zjistite pomoci metody suffix
+
+
+_________________________________________________________
+
+# importujte from pathlib import Path
+
+# do promenne slozka ulozte cestu k adresari pro stazene soubory
+
+# do promenne soubory ulozte vysledek metody iterdir() nad promennou slozka, ziskate tak list souboru v adresari
+
+# do promenne vstup ulozte input uzivatele
+
+# pokud je uzivatelem zadany input soucasti nazvu nektereho ze souboru v promenne soubory, vypiste uzivateli: 'Soubor nalezen', jinak 'Soubor nenalezen'.
+# pro jistotu prevedte vstup uzivatele i nazev souboru na lowercase
+
+_________________________________________________________
+
+# importujte modul requests
+
+
+mesta = ['Praha','Brno','Ostrava','Olomouc','Ostrava']
+wiki = 'https://cs.wikipedia.org/wiki/'
+existujici_mesta = []
+
+# prochazejte list mesta
+# pro kazde mesto vytvorte URL adresu na wikipedii (tj. wiki + mesto)
+# vytvorte promennou r typu requests.get s vytvorenou URL adresou
+# pokud r.status_code neni 200, pokracujte na dalsi mesto
+# pokud r.status_code je 200, pridejte mesto do listu existujici_mesta
+
+
+
+
+# prevedte vsechny polozky v listu existujici_mesta na lowercase
+
+
+_________________________________________________________
+
+# importujte modul requests
+# importujte modul BeautifulSoup z balíčku bs4 jako alias bs
+# importujte modul re
+
+import requests
+from bs4 import BeautifulSoup as bs
+import re
+
+meteo = 'https://www.meteocentrum.cz/aktualni-pocasi/'
+# do promenne mesto vlozte input uzivatele
+
+# vytvorte promennou url s adresou meteo + mesto
+
+# vytvorte promennou r typu requests.get s vytvorenou URL adresou
+# do promenne odpoved vlozte r.status_code
+# pokud odpoved neni 200, vytisknete 'Město neexistuje'
+# pokud odpoved je 200, vytvorte promennou soup s obsahem r.text a 'html.parser', tj. soup  = bs(r.text, 'html.parser')
+# do promenne pocasi zavolejte funkci zjisti_pocasi(soup)
+# vypiste uzivateli do konzole 'Aktuální teplota v městě {zadane mesto} je {pocasi}'
+
+
+def zjisti_pocasi(soup):
+    
+    pocasi = soup.find_all('div', class_='actual-weather-temperature')[0].text
+    return pocasi
+
+
+
+
+
+
+
+
+
